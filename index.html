@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This website collects data for covid-19 impact assessment. So that the owners of this website can efficiently estimate the impact of covid-19 in a region">
+    <meta name="keywords" content="covid-19 impacts region">
+    <meta name="author" content="Anozie Franklin Chidiebere">
+    <title>Build For SDG</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <span class="navbar-brand">COVID-19 ESTIMATOR APP</span>
+            </div>
+            <div class="collapse navbar-collapse" id="top-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#estimator">Estimator APP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="section" id="home">
+        <div class="container">
+            <div class="jumbotron">
+                <h2 class="display-4">COVID-19 ESTIMATOR APP</h2>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+              </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-12" id="submit">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+                <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+
+                <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+
+                <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <aside id="estimator" class="aside">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Estimator App</h2>
+                    <form>
+                        <div class="form-row">
+                          <div class="col-md-4 mb-3">
+                            <label for="data-population">Population</label>
+                            <input type="number" class="form-control" id="data-population" placeholder="Population of community" value="" required>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="data-time-to-elapse">Time To Elapse</label>
+                            <input type="number" class="form-control" id="data-time-to-elapse" placeholder="Time to collect data" value="" required>
+                          </div>
+                          <div class="col-md-4 mb-3">
+                            <label for="data-reported-cases">Reported Cases</label>
+                            <input type="number" class="form-control" id="data-reported-cases" placeholder="Number of Reported Cases" required>
+                            </div>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="data-total-hospital-beds">Number of Hospital Beds</label>
+                            <input type="number" class="form-control" id="data-total-hospital-beds" placeholder="Number of Hospital Beds" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                              <label for="data-period-type">Period Type</label>
+                              <select class="form-control mr-sm-2 custom-select" id="data-period-type">
+                                <option selected>Choose...</option>
+                                <option value="days">days</option>
+                                <option value="weeks">weeks</option>
+                                <option value="months">months</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <button class="btn btn-primary" type="submit" id="data-go-estimate">Submit form</button>
+                          </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<html></html>
